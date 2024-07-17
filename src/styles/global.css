@@ -1,0 +1,118 @@
+:root {
+    --bodyColor: #615756;
+    --formColor: #9dc2e1;
+    --linkColor: #5555f7;
+    --linkHoverColor: #3838ee;
+    --linkActiveColor: ;
+    --linkVisitedColor: ;
+    --buttonSubmitColor: #05702e;
+    --buttonSubmitBgColor: #4AE083;
+    --buttonSubmitHoverColor: #36b670;
+    --buttonResetColor: #810f09;
+    --buttonResetBgColor: #E05D57;
+    --buttonResetHoverColor: #d65147;
+}
+
+@font-face {
+    font-family: Tormenta20;
+    src: url(/src/fonts/Tormenta.ttf);
+}
+
+body {
+    background-color: var(--bodyColor);
+    font-size: 20px;
+    font-family: Tormenta20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ee2b2a;
+    text-shadow: .15rem .15rem .2rem #000;
+}
+
+h1 > img{
+    height: 2rem;
+    margin: 0rem 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+form {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--formColor);
+    font-size: 1rem;
+}
+
+.names{
+    margin: .5rem 0rem;
+}
+
+.character_about{
+    margin: .5rem 0rem;
+}
+
+.character_stats{
+    margin: .5rem 0rem;
+}
+
+.character_health_mana{
+    margin: .5rem 0rem;
+}
+
+.form_buttons{
+    margin-top: 1rem;
+}
+
+.submit{
+    color: var(--buttonSubmitColor);
+    background-color: var(--buttonSubmitBgColor);
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.submit:hover{
+    background-color: var(--buttonSubmitHoverColor);
+}
+
+.reset{
+    color: var(--buttonResetColor);
+    background-color: var(--buttonResetBgColor);
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.reset:hover{
+    background-color: var(--buttonResetHoverColor);
+}
+
+.links{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links > a{
+    margin: .2rem;
+    color: var(--linkColor);
+    text-shadow: .1rem .1rem #000;
+    background-color: rgba(1, 1, 1, 0.3);
+    padding: .2rem;
+    border-radius: .3rem;
+}
+
+.links > a:hover{
+    color: var(--linkHoverColor);
+}

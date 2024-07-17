@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tormenta 20 - Char Creator</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/global.css">
 </head>
 
 <body>
-  <h1>Tormenta 20 - Char Creator</h1>
+  <h1><img src="https://i0.wp.com/www.firefalcon.com.br/wp-content/uploads/2022/12/Logo-Tormenta20.png?fit=1000%2C156&ssl=1" alt="Logo-Tormenta20">CHAR CREATOR</h1>
   <h2>Selecione as características do personagem:</h2>
+  
   <form>
     <div class="character_info">
-      Informações
-      <br><br>
-      <label for="character">Personagem:</label>
-      <input type="text" id="character" name="character" required>
+      <div class="names">
+        <label for="character">Nome do Personagem:</label>
+        <input type="text" id="character" name="character" required>
 
-      <label for="player">Jogador:</label>
-      <input type="text" id="player" name="player" required>
-
-      <br><br>
+        <label for="player">Nome do Jogador:</label>
+        <input type="text" id="player" name="player" required>
+      </div>
 
       <div class="character_about">
         <label for="origin">Origem:</label>
@@ -59,11 +59,7 @@
       </div>
     </div>
 
-    <br><br>
-
     <div class="character_stats">
-      Estatísticas
-      <br><br>
       <label for="strength">Força (For):</label>
       <input type="number" id="strength" name="strength" min="1" max="20" required>
 
@@ -81,7 +77,6 @@
 
       <label for="charisma">Carisma (Car):</label>
       <input type="number" id="charisma" name="charisma" min="1" max="20" required>
-      <br><br>
     </div>
 
     <div class="character_health_mana">
@@ -92,25 +87,19 @@
       <input type="number" id="mana_points" name="mana_points" min="0" required>
     </div>
 
-    <br>
-
-    <input type="submit" value="Criar Personagem">
-    <input type="reset" value="Limpar">
+    <div class="form_buttons">
+      <input type="submit" class="submit" value="Criar Personagem">
+      <input type="reset" class="reset" value="Limpar">
+    </div>
   </form>
 
 
   <!-- Seção de Links ou Rodapé -->
   <div class="links">
-    <br><br>
-    |
     <a href="https://drive.google.com/file/d/1becqXvMQiIkMqCIN4NmYqgDJ2C6pJUDI/view" target="_blank">Livro T20 Edição Jogo do Ano</a>
-    |
     <a href="https://drive.google.com/file/d/19UM-pAZxzKHtQBDVvRv88MkctK8-3rVp/view" target="_blank">Resumo de Regras T20</a>
-    |
     <a href="https://drive.google.com/drive/folders/1a2rmeV_NJQ9rVPt4l1kCA8VP8nLk2ttZ" target="_blank">Drive compartilhado - T20</a>
-    |
-    <br><br>
-  </div>
+    </div>
 
 </body>
 
