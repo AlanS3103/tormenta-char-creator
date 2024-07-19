@@ -25,6 +25,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 body > h1 {
@@ -47,28 +49,33 @@ h2 {
     margin: 1rem;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 form {
     margin: 1rem;
     padding: 1rem;
     border-radius: .5rem;
     background-color: var(--formColor);
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
 }
 
-.names{
-    margin: .5rem 0rem;
+.names, .character_about, .character_stats, .character_health_mana{
+    margin: .8rem 0rem;
 }
 
-.character_about{
-    margin: .5rem 0rem;
-}
-
-.character_stats{
-    margin: .5rem 0rem;
-}
-
-.character_health_mana{
-    margin: .5rem 0rem;
+.char_name, .player_name, .char_origin, .char_race, .char_class, .char_level, .char_strength, .char_dexterity, .char_constitution, .char_intelligence, .char_wisdom, .char_charisma, .char_life, .char_mana{
+    margin: .3rem 0rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .form_buttons{
@@ -100,12 +107,11 @@ form {
 .links{
     font-size: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: .5rem;
+    margin: 1.5rem;
 }
 
 .links > a{
-    margin: .2rem;
     color: var(--linkColor);
     text-shadow: .1rem .1rem #000;
     background-color: rgba(1, 1, 1, 0.3);

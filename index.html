@@ -10,96 +10,125 @@
 </head>
 
 <body>
-  <h1><img src="https://i0.wp.com/www.firefalcon.com.br/wp-content/uploads/2022/12/Logo-Tormenta20.png?fit=1000%2C156&ssl=1" alt="Logo-Tormenta20">CHAR CREATOR</h1>
-  <h2>Selecione as características do personagem:</h2>
-  
-  <form>
-    <div class="character_info">
-      <div class="names">
-        <label for="character">Nome do Personagem:</label>
-        <input type="text" id="character" name="character" required>
+  <h1><img
+      src="https://i0.wp.com/www.firefalcon.com.br/wp-content/uploads/2022/12/Logo-Tormenta20.png?fit=1000%2C156&ssl=1"
+      alt="Logo-Tormenta20">CHAR CREATOR</h1>
 
-        <label for="player">Nome do Jogador:</label>
-        <input type="text" id="player" name="player" required>
+  <div class="content">
+    <h2>Selecione as características do personagem:</h2>
+
+    <form>
+      <div class="character_info">
+        <div class="names">
+          <div class="char_name">
+            <label for="character">Nome do Personagem:</label>
+            <input type="text" id="character" name="character" required>
+          </div>
+          <div class="player_name">
+            <label for="player">Nome do Jogador:</label>
+            <input type="text" id="player" name="player">
+          </div>
+        </div>
+
+        <div class="character_about">
+          <div class="char_origin">
+            <label for="origin">Origem:</label>
+            <select id="origin" name="origin" required>
+              <option value="">Selecione uma origem...</option>
+              <option value="animal_friendly">Amigo dos Animais</option>
+              <option value="artist">Artista</option>
+              <option value="hermit">Eremita</option>
+              <option value="merchant">Mercador</option>
+              <option value="farmer">Fazendeiro</option>
+            </select>
+          </div>
+
+          <div class="char_race">
+            <label for="race">Raça:</label>
+            <select id="race" name="race" required>
+              <option value="">Selecione uma raça...</option>
+              <option value="dwarf">Anão</option>
+              <option value="dahllan">Dahllan</option>
+              <option value="elf">Elfo</option>
+              <option value="goblin">Goblin</option>
+              <option value="trog">Troglodita (Trog)</option>
+            </select>
+          </div>
+
+          <div class="char_class">
+            <label for="class">Classe:</label>
+            <select id="class" name="class" required>
+              <option value="">Selecione uma classe...</option>
+              <option value="warrior">Guerreiro</option>
+              <option value="rogue">Ladino</option>
+              <option value="mage">Mago</option>
+              <option value="priest">Sacerdote</option>
+              <option value="inventor">Inventor</option>
+            </select>
+          </div>
+
+          <div class="char_level">
+            <label for="level">Nível:</label>
+            <input type="number" id="level" name="level" min="1" max="20" required>
+          </div>
+        </div>
       </div>
 
-      <div class="character_about">
-        <label for="origin">Origem:</label>
-        <select id="origin" name="origin" required>
-          <option value="">Selecione uma origem...</option>
-          <option value="animal_friendly">Amigo dos Animais</option>
-          <option value="artist">Artista</option>
-          <option value="hermit">Eremita</option>
-          <option value="merchant">Mercador</option>
-          <option value="farmer">Fazendeiro</option>
-        </select>
-
-        <label for="race">Raça:</label>
-        <select id="race" name="race" required>
-          <option value="">Selecione uma raça...</option>
-          <option value="dwarf">Anão</option>
-          <option value="dahllan">Dahllan</option>
-          <option value="elf">Elfo</option>
-          <option value="goblin">Goblin</option>
-          <option value="trog">Troglodita (Trog)</option>
-        </select>
-
-        <label for="class">Classe:</label>
-        <select id="class" name="class" required>
-          <option value="">Selecione uma classe...</option>
-          <option value="warrior">Guerreiro</option>
-          <option value="rogue">Ladino</option>
-          <option value="mage">Mago</option>
-          <option value="priest">Sacerdote</option>
-          <option value="inventor">Inventor</option>
-        </select>
-
-        <label for="level">Nível:</label>
-        <input type="number" id="level" name="level" min="1" max="20" required>
+      <div class="character_stats">
+        <div class="char_strength">
+          <label for="strength">Força (For):</label>
+          <input type="number" id="strength" name="strength" min="1" max="20" required>
+        </div>
+        <div class="char_dexterity">
+          <label for="dexterity">Destreza (Des):</label>
+          <input type="number" id="dexterity" name="dexterity" min="1" max="20" required>
+        </div>
+        <div class="char_constitution">
+          <label for="constitution">Constituição (Con):</label>
+          <input type="number" id="constitution" name="constitution" min="1" max="20" required>
+        </div>
+        <div class="char_intelligence">
+          <label for="intelligence">Inteligência (Int):</label>
+          <input type="number" id="intelligence" name="intelligence" min="1" max="20" required>
+        </div>
+        <div class="char_wisdom">
+          <label for="wisdom">Sabedoria (Sab):</label>
+          <input type="number" id="wisdom" name="wisdom" min="1" max="20" required>
+        </div>
+        <div class="char_charisma">
+          <label for="charisma">Carisma (Car):</label>
+          <input type="number" id="charisma" name="charisma" min="1" max="20" required>
+        </div>
       </div>
-    </div>
 
-    <div class="character_stats">
-      <label for="strength">Força (For):</label>
-      <input type="number" id="strength" name="strength" min="1" max="20" required>
+      <div class="character_health_mana">
+        <div class="char_life">
+          <label for="life_points">Pontos de Vida (PV):</label>
+          <input type="number" id="life_points" name="life_points" min="1" required>
+        </div>
+        <div class="char_mana">
+          <label for="mana_points">Pontos de Mana (PM):</label>
+          <input type="number" id="mana_points" name="mana_points" min="0" required>
+        </div>
+      </div>
 
-      <label for="dexterity">Destreza (Des):</label>
-      <input type="number" id="dexterity" name="dexterity" min="1" max="20" required>
-
-      <label for="constitution">Constituição (Con):</label>
-      <input type="number" id="constitution" name="constitution" min="1" max="20" required>
-
-      <label for="intelligence">Inteligência (Int):</label>
-      <input type="number" id="intelligence" name="intelligence" min="1" max="20" required>
-
-      <label for="wisdom">Sabedoria (Sab):</label>
-      <input type="number" id="wisdom" name="wisdom" min="1" max="20" required>
-
-      <label for="charisma">Carisma (Car):</label>
-      <input type="number" id="charisma" name="charisma" min="1" max="20" required>
-    </div>
-
-    <div class="character_health_mana">
-      <label for="life_points">Pontos de Vida (PV):</label>
-      <input type="number" id="life_points" name="life_points" min="1" required>
-
-      <label for="mana_points">Pontos de Mana (PM):</label>
-      <input type="number" id="mana_points" name="mana_points" min="0" required>
-    </div>
-
-    <div class="form_buttons">
-      <input type="submit" class="submit" value="Criar Personagem">
-      <input type="reset" class="reset" value="Limpar">
-    </div>
-  </form>
+      <div class="form_buttons">
+        <input type="submit" class="submit" value="Criar Personagem">
+        <input type="reset" class="reset" value="Limpar">
+      </div>
+    </form>
+  </div>
 
 
   <!-- Seção de Links ou Rodapé -->
   <div class="links">
-    <a href="https://drive.google.com/file/d/1becqXvMQiIkMqCIN4NmYqgDJ2C6pJUDI/view" target="_blank">Livro T20 Edição Jogo do Ano</a>
-    <a href="https://drive.google.com/file/d/19UM-pAZxzKHtQBDVvRv88MkctK8-3rVp/view" target="_blank">Resumo de Regras T20</a>
-    <a href="https://drive.google.com/drive/folders/1a2rmeV_NJQ9rVPt4l1kCA8VP8nLk2ttZ" target="_blank">Drive compartilhado - T20</a>
-    </div>
+    <a href="https://drive.google.com/file/d/1becqXvMQiIkMqCIN4NmYqgDJ2C6pJUDI/view" target="_blank">Livro T20 Edição
+      Jogo do Ano</a>
+    <a href="https://drive.google.com/file/d/19UM-pAZxzKHtQBDVvRv88MkctK8-3rVp/view" target="_blank">Resumo de Regras
+      T20</a>
+    <a href="https://drive.google.com/drive/folders/1a2rmeV_NJQ9rVPt4l1kCA8VP8nLk2ttZ" target="_blank">Drive
+      compartilhado - T20</a>
+  </div>
 
 </body>
 
